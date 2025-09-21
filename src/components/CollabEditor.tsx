@@ -105,7 +105,7 @@ export default function RoomPage() {
 
     // Create Y.js document and WebSocket provider
     const ydoc = new Y.Doc();
-    const provider = new WebsocketProvider('ws://localhost:1234', roomId, ydoc);
+    const provider = new WebsocketProvider( 'wss://766cfbad6687.ngrok-free.app', roomId, ydoc);
     const ytext = ydoc.getText('monaco');
 
     // Store refs for cleanup
